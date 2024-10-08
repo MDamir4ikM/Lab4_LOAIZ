@@ -25,6 +25,11 @@ struct Node* CreateTree(struct Node* root, struct Node* r, int data)
 		r->data = data;
 		if (root == NULL) return r;
 
+		if (data == root->data) //Проверяем, есть ли такой элемент
+		{
+			return root; //Если есть, то возвращаем указатель на корень
+		} 
+
 		if (data > root->data)	root->left = r;
 		else root->right = r;
 		return r;
@@ -106,14 +111,27 @@ int main()
 
 	}
 
-	std::cout << "Введите элемент, количество вхождений которого хотите узнать: ";
-	std::cin >> D;
+	std::cout << "Хотите вывести дерево на экран:\n1 - да\n2 - нет\nОтвет: ";
+	int otvet;
+	std::cin >> otvet;
+	if (otvet == 1)
+	{
+		print_tree(root, 0);
+	}
 
-	r = find(root, D);
-	if (r != NULL)printf("Найденный элемент = %d ", r->data);
+	std::cout << "Хотите произвести подсчёт вхождения элемента:\n1 - да\n2 - нет\nОтвет: ";
+	std::cin >> otvet;
+	if (otvet == 1)
+	{
+		std::cout << "Введите элемент, количество вхождений которого хотите узнать: ";
+		std::cin >> D;
 
-	co = fcount(root, D, 0);
-	printf("Количество = %d ", co);
+		r = find(root, D);
+		if (r != NULL)printf("Найденный элемент = %d ", r->data);
+
+		co = fcount(root, D, 0);
+		printf("Количество = %d ", co);
+	}
 
 	return 0;
 }
