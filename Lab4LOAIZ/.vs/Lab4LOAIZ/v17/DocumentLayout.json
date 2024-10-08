@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u041B\u043E\u0433\u0438\u043A\u0430 \u0438 \u043E\u0441\u043D\u043E\u0432\u044B \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u0438\u0437\u0430\u0446\u0438\u0438\\\u0413\u0438\u0442\u0414\u043B\u044F\u041B\u0430\u0431\\Lab4LOAIZ\\Lab4_LOAIZ\\Lab4LOAIZ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78C850FA-947F-43C2-A080-BD5530CDBAFA}|Lab4LOAIZ\\Lab4LOAIZ.vcxproj|C:\\Users\\User\\Desktop\\\u041B\u043E\u0433\u0438\u043A\u0430 \u0438 \u043E\u0441\u043D\u043E\u0432\u044B \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u0438\u0437\u0430\u0446\u0438\u0438\\\u0413\u0438\u0442\u0414\u043B\u044F\u041B\u0430\u0431\\Lab4LOAIZ\\Lab4_LOAIZ\\Lab4LOAIZ\\Lab4LOAIZ\\Lab4LOAIZ.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{78C850FA-947F-43C2-A080-BD5530CDBAFA}|Lab4LOAIZ\\Lab4LOAIZ.vcxproj|solutionrelative:Lab4LOAIZ\\Lab4LOAIZ.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lab4LOAIZ.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041B\u043E\u0433\u0438\u043A\u0430 \u0438 \u043E\u0441\u043D\u043E\u0432\u044B \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u0438\u0437\u0430\u0446\u0438\u0438\\\u0413\u0438\u0442\u0414\u043B\u044F\u041B\u0430\u0431\\Lab4LOAIZ\\Lab4_LOAIZ\\Lab4LOAIZ\\Lab4LOAIZ\\Lab4LOAIZ.cpp",
+              "RelativeDocumentMoniker": "Lab4LOAIZ\\Lab4LOAIZ.cpp",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041B\u043E\u0433\u0438\u043A\u0430 \u0438 \u043E\u0441\u043D\u043E\u0432\u044B \u0430\u043B\u0433\u043E\u0440\u0438\u0442\u043C\u0438\u0437\u0430\u0446\u0438\u0438\\\u0413\u0438\u0442\u0414\u043B\u044F\u041B\u0430\u0431\\Lab4LOAIZ\\Lab4_LOAIZ\\Lab4LOAIZ\\Lab4LOAIZ\\Lab4LOAIZ.cpp",
+              "RelativeToolTip": "Lab4LOAIZ\\Lab4LOAIZ.cpp",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAUwGcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-08T17:38:57.853Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
