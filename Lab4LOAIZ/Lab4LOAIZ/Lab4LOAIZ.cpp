@@ -25,8 +25,9 @@ struct Node* CreateTree(struct Node* root, struct Node* r, int data)
 		r->data = data;
 		if (root == NULL) return r;
 
-		if (data == root->data) //Проверяем, есть ли такой элемент
+		if (data == root->data) //Проверяем, есть ли такой элемент 
 		{
+			std::cout << "Такой элемент уже есть" << std::endl;
 			return root; //Если есть, то возвращаем указатель на корень
 		} 
 
