@@ -25,12 +25,6 @@ struct Node* CreateTree(struct Node* root, struct Node* r, int data)
 		r->data = data;
 		if (root == NULL) return r;
 
-		if (data == root->data) //Проверяем, есть ли такой элемент 
-		{
-			std::cout << "Такой элемент уже есть" << std::endl;
-			return root; //Если есть, то возвращаем указатель на корень
-		} 
-
 		if (data > root->data)	root->left = r;
 		else root->right = r;
 		return r;
@@ -66,17 +60,17 @@ struct Node* find(struct Node* r, int data)
 {
 	if (r->data == data) return r;
 
-	else if (r->data < data && r->left != NULL)
+	else if (r->data < data && r->left != NULL) //идём вправо, если	текущее значение меньше
 	{
 		find(r->left, data);
 	}
-	else if (r->data > data && data && r->right != NULL)
+	else if (r->data > data && data && r->right != NULL) //идём влево, если текущее значение больше
 	{
 		find(r->right, data);
 	}
 	else
 	{
-		std::cout << "Не найден";
+		std::cout << "Не найден" << std::endl;
 		return NULL;
 	}
 }
@@ -90,49 +84,57 @@ int fcount(struct Node* r, int data, int count)
 	return count;
 }
 
+void reverse_order_traversal(struct Node* r) {
+	if (r == NULL) {
+		return;
+	}
+
+	// Сначала обходим правое поддерево
+	reverse_order_traversal(r->right);
+
+	// Затем обходим левое поддерево
+	reverse_order_traversal(r->left);
+
+	// Наконец, обрабатываем корень
+	printf("%d ", r->data);
+}
+
 int main()
 {
 	setlocale(LC_ALL, "");
-	int D, start = 1, co;
+	int D, stare = 1, co;
 	struct Node* r = NULL;
 
 	root = NULL;
 	printf("-1 - окончание построения дерева\n");
-	while (start)
+	while (stare)
 	{
 		printf("Введите число: ");
 		scanf_s("%d", &D);
 		if (D == -1)
 		{
 			printf("Построение дерева окончено\n\n");
-			start = 0;
+			stare = 0;
 		}
 		else
 			root = CreateTree(root, root, D);
 
 	}
 
-	std::cout << "Хотите вывести дерево на экран:\n1 - да\n2 - нет\nОтвет: ";
-	int otvet;
-	std::cin >> otvet;
-	if (otvet == 1)
-	{
-		print_tree(root, 0);
-	}
+	printf("\nОбратный обход дерева:\n");
+	reverse_order_traversal(root); // Вызов обратного обхода
 
-	std::cout << "Хотите произвести подсчёт вхождения элемента:\n1 - да\n2 - нет\nОтвет: ";
-	std::cin >> otvet;
-	if (otvet == 1)
-	{
-		std::cout << "Введите элемент, количество вхождений которого хотите узнать: ";
-		std::cin >> D;
+	std::cout << std::endl;
+	print_tree(root, 0);
 
-		r = find(root, D);
-		if (r != NULL)printf("Найденный элемент = %d ", r->data);
+	//std::cout << "Введите элемент, количество вхождений которого хотите узнать: ";
+	//std::cin >> D;
 
-		co = fcount(root, D, 0);
-		printf("Количество = %d ", co);
-	}
+	//r = find(root, D);
+	//if (r != NULL)printf("Найденный элемент = %d ", r->data);
+
+	//co = fcount(root, D, 0);
+	//printf("Количество = %d ", co);
 
 	return 0;
 }
